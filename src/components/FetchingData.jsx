@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import "./CountryList.css";
+import "./CountryList.css"; // Import a CSS file for styling
 
 function CountryList() {
   const [countries, setCountries] = useState([]);
@@ -37,15 +37,15 @@ function CountryList() {
 
   return (
     <div className="container">
-      <div className="countries-grid">
+      <div className="countries-list">
         {countries.map((country) => (
           <div className="country-item" key={country.cca3}>
+            <span className="country-name">{country.name.common}</span>
             <img
               src={country.flags.svg}
               alt={`${country.name.common} flag`}
               className="flag"
             />
-            <h2>{country.name.common}</h2>
           </div>
         ))}
       </div>
