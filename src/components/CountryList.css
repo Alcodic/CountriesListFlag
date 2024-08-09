@@ -1,0 +1,41 @@
+/* src/CountryList.css */
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+.countries-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.country-item {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 10px;
+  transition: transform 0.2s;
+}
+
+.country-item:hover {
+  transform: scale(1.05);
+}
+
+.flag {
+  width: 100px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+h2 {
+  font-size: 18px;
+  margin: 0;
+}
+
