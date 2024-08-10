@@ -1,17 +1,7 @@
-import CountryList from "./components/FetchingData";
-import Heading from "./components/Heading";
-import Title from "./components/Title";
+import CountryList from "./CountryList";
 
 function App() {
-  return (
-    <>
-      <div style={{ textAlign: "center" }}>
-        <Heading></Heading>
-        <Title />
-        <CountryList />
-      </div>
-    </>
-  );
+  return <CountryList />;
 }
 
 export default App;
